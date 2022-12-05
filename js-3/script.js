@@ -63,7 +63,8 @@ const zucchine = [
 let pesoTotale = 0;
 let mediaPeso = 0;
 
-let lunghezza = 0;
+let lunghezzaTotale = 0;
+let mediaLunghezza = 0;
 
 for (let i = 0; i < zucchine.length; i++) {
     pesoTotale += zucchine[i].peso;
