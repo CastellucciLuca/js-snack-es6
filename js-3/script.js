@@ -60,14 +60,14 @@ const zucchine = [
     },
 ]
 
-let peso = 0;
+let pesoTotale = 0;
 let mediaPeso = 0;
 
 let lunghezza = 0;
 
 for (let i = 0; i < zucchine.length; i++) {
-    peso += zucchine[i].peso;
-    mediaPeso = peso / zucchine.length;
+    pesoTotale += zucchine[i].peso;
+    mediaPeso = pesoTotale / zucchine.length;
 }
-console.log(peso +'kg');
+console.log(pesoTotale +'kg');
 console.log(mediaPeso + ' media dei pesi in kg');
