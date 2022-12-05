@@ -5,7 +5,7 @@
 const student = {
     name: 'Luca',
     surname: 'Giongi',
-    eta: '24',
+    age: '24',
 }
 
 for (let key in student){
