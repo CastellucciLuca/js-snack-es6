@@ -5,9 +5,20 @@
 const student = {
     name: 'Luca',
     surname: 'Giongi',
-    age: '24',
+    age: 24
+}
+
+const secondStudent ={
+    name: 'Pino',
+    surname: 'Pinolo',
+    age: 44
 }
 
 for (let key in student){
     console.log(key + " => " + student[key]);
 }
+
+const classe = [];
+
+classe.push(student,secondStudent);
+console.log(classe);
