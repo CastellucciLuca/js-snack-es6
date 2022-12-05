@@ -11,57 +11,63 @@ const zucchine = [
     {
     varietà:'Zucchino ortolano di Faenza',
     peso: 29,
-    lunghezza: '16cm',
+    lunghezza: 16
     },
     {
     varietà:'Zucchino nero di Milano',
     peso: 105,
-    lunghezza: '12cm',
+    lunghezza: 12
     },
     {
-        varietà:'Zucchino siciliano',
-        peso: 50,
-        lunghezza: '15cm',
+    varietà:'Zucchino siciliano',
+    peso: 50,
+    lunghezza: 15
     },
     {
-        varietà:'Zucchina striata di Napoli',
-        peso: 25,
-        lunghezza: '12cm',
+    varietà:'Zucchina striata di Napoli',
+    peso: 25,
+    lunghezza: 12
     },
     {
-        varietà:'Zucchina rigata pugliese',
-        peso: 14,
-        lunghezza: '17cm',
+    varietà:'Zucchina rigata pugliese',
+    peso: 14,
+    lunghezza: 17
     },
     {
-        varietà:'Zucchino tondo di Piacenza',
-        peso: 15,
-        lunghezza: '15cm',
+    varietà:'Zucchino tondo di Piacenza',
+    peso: 15,
+    lunghezza: 15
     },
     {
-        varietà:'Zucchino tondo di Nizza',
-        peso: 12,
-        lunghezza: '6cm',
+    varietà:'Zucchino tondo di Nizza',
+    peso: 12,
+    lunghezza: 6
     },
     {
-        varietà:'Zucchino tondo di Firenze',
-        peso: 10,
-        lunghezza: '16cm',
+    varietà:'Zucchino tondo di Firenze',
+    peso: 10,
+    lunghezza: 16
     },
     {
-        varietà:'Zucchina trombetta di Albenga',
-        peso: 15,
-        lunghezza: '17cm',
+    varietà:'Zucchina trombetta di Albenga',
+    peso: 15,
+    lunghezza: 17
     },
     {
-        varietà:'Zucchina pâtisson',
-        peso: 9,
-        lunghezza: '6mt',
+    varietà:'Zucchina pâtisson',
+    peso: 9,
+    lunghezza: 4
     },
 ]
 
 let peso = 0;
+let mediaPeso = 0;
+
+let lunghezza = 0;
+
 for (let i = 0; i < zucchine.length; i++) {
     peso += zucchine[i].peso;
+    mediaPeso = peso / zucchine.length;
 }
 console.log(peso +'kg');
+console.log(mediaPeso + ' media dei pesi in kg');
