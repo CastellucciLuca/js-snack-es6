@@ -75,7 +75,7 @@ for (let i = 0; i < cars.length; i++) {
             break;
     }
 }
-
+cars.push(dieselCars,benzinaCars,otherCars);
 console.log('benzina',benzinaCars);
 console.log('diesel',dieselCars);
 console.log('other',otherCars);
