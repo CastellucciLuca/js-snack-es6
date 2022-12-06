@@ -6,7 +6,7 @@ Ogni persona ha un nome, un cognome e un'età, creiamone almeno una decina.
 Crea quindi un nuovo array inserendo, per ogni persona, una frase con il nome e cognome e l'indicazione se può guidare, in base all'età.
 
  */
-const persone =  [
+const peoples =  [
     { name: 'Luca', surname: 'poddighe', age: 25 },
     { name: 'Laura', surname: 'pausini', age: 27 },
     { name: 'Lorenzo', surname: 'militare', age: 33 },
@@ -19,11 +19,11 @@ const persone =  [
     { name: 'Josue', surname: 'carducci', age: 15 },
 ];
 
-const driversList = persone.map((persona) => {
-    if (persona.age > 17){
-        return `${persona.name} ${persona.surname} can drive`;
+const driversList = peoples.map((people) => {
+    if (people.age > 17){
+        return `${people.name} ${people.surname} can drive`;
     }
-    return `${persona.name} ${persona.surname} can't drive`;
+    return `${people.name} ${people.surname} can't drive`;
 });
 
 console.log(driversList);
